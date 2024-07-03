@@ -1,0 +1,498 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Zilla Slab', serif;
+}
+/*------------------------------------
+Common header part Start-------------------*/
+.common-header{
+    font-size: 2.2rem;
+    color: black;
+    position: relative;
+    margin-left: 2%;
+}
+.common-header:before{
+    content: '';
+    position: absolute;
+    background-color: chartreuse;
+    width: 3%;
+    height: 5px;
+    left: -3%;
+    right: 0%;
+    top: 40%;
+    transform: rotate(90deg);
+}
+@media (max-width:790px){
+    .common-header:before{
+      
+        width: 7%;
+        height: 4px;
+        right: 0%;
+        top: 40%;
+        left: -5%;
+        
+    }
+}
+/*------------navbar--------------*/
+.navbar{
+    background-color: white;
+    height: 12vh;
+}
+.navbar-text{
+    font-family: 'Pacifico', cursive;
+    color: chartreuse;
+    padding-left: 60px;
+    font-size: 2rem;
+}
+.navbar-nav{
+    margin-right: 20px;
+}
+@media only screen and (max-width: 492px){
+    .navbar-text{
+        padding-left: 20px;
+        font-size: 1.8rem;
+    }
+    .navbar{
+        height: 10vh;
+      
+    }
+    .navbar-nav{
+        background-color: white;
+        margin-right: 0px;
+    }
+    
+}
+@media only screen and (max-width: 392px){
+    .navbar-text{
+        padding-left: 20px;
+        font-size: 1.8rem;
+    }
+    .navbar{
+        height: 12vh;
+        
+    }
+    .navbar-nav{
+        background-color: white;
+        margin-right: 0px;
+    }
+}
+/*-----------------------------
+header strat------------------*/
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(./images/Fahmida.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-trxt{
+    padding: 157px 60px;
+}
+.hero-subtitle{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 3.6rem;
+  
+}
+.hero-title{
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+.hero-p{
+    font-size: 1.4rem;
+}
+.btn1{
+    background-color: chartreuse;
+    color: black;
+   border-radius: 10%;
+}
+@media (max-width:780px){
+    .hero-subtitle{
+        font-size: 2.5rem;
+      
+    }
+    .hero-trxt{
+        padding: 135px 12px;
+    }
+}
+/*Misson*/
+.misson-section{
+    margin-top: 65px;
+     text-align: justify; 
+      
+}
+/*services*/
+.main-timeline{ font-family: 'Poppins', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: calc(50% + 30px);
+    padding: 0 80px 0 0;
+    float: left; 
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline-content{
+    color: #666;
+    background: #fff;
+    min-height: 130px;
+    padding: 20px 20px 20px 70px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 50px;
+    display: block;
+    z-index: 0;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:after{
+    content: '';
+    background: orange;
+    width: 50%;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    bottom: 2px;
+    z-index: -1;
+}
+.main-timeline .timeline-icon{
+    color: orange;
+    font-size: 35px;
+    line-height: 35px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 18px;
+}
+.main-timeline .timeline-step{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 16px;
+}
+.main-timeline .timeline-step span{
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+}
+.main-timeline .title{
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+.main-timeline .title:after{
+    content: '';
+    background-color: orange;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto;
+    display: block;
+    clear: both;
+}
+.main-timeline .description{
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    line-height: 18px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){
+    float: right;
+    padding: 0 0 0 80px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{ padding: 20px 70px 20px 25px; }
+.main-timeline .timeline:nth-child(even) .timeline-content:after{
+    right: auto;
+    left: 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon{
+    left: auto;
+    right: 17px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-step{
+    right: auto;
+    left: 16px;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-content:after{ background: orange; }
+.main-timeline .timeline:nth-child(4n+2) .timeline-icon{ color: orange; }
+.main-timeline .timeline:nth-child(4n+2) .title:after{ background: orange; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-content:after{ background: orange; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-icon{ color: orange; }
+.main-timeline .timeline:nth-child(4n+3) .title:after{ background: orange; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content:after{ background: orange; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-icon{ color: orange; }
+.main-timeline .timeline:nth-child(4n+4) .title:after{ background: orange; }
+@media screen and (max-width:767px){
+    .main-timeline .timeline{
+        width: 100%;
+        margin: 0 0 30px;
+    }   
+}
+@media screen and (max-width:576px){
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        padding: 80px 0 0;
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(even) .timeline-content{
+        padding: 20px 20px 70px 20px;
+        border-radius: 20px;
+    }
+    .main-timeline .timeline-content:after,
+    .main-timeline .timeline:nth-child(even) .timeline-content:after{
+        width: 100%;
+        border-radius: 20px;
+        top: 0;
+        bottom: 50px;
+    }
+    .main-timeline .timeline-icon,
+    .main-timeline .timeline:nth-child(even) .timeline-icon{
+        transform: translateY(0) translateX(-50%);
+        left: 50%;
+        right: auto;
+        top: auto;
+        bottom: 17px;
+    }
+    .main-timeline .timeline-step,
+    .main-timeline .timeline:nth-child(even) .timeline-step{
+        transform: translateY(0) translateX(-50%);
+        left: 50%;
+        right: auto;
+        top: 11px;
+    }
+}
+.service-section{
+    margin-top: 80px;
+}
+/*-------Gallery--------*/
+.gallery{
+    margin-top: 70px;
+}
+.gallery-pic img{
+    filter: grayscale(0.7) brightness(0.5);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.gallery-pic img:hover{
+    filter: grayscale(0) brightness(1);
+    transform: scale(1.1);
+}
+/*---------------------Team---------------*/
+.card-section{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.card-img{
+    position: relative;
+   
+}
+
+.social-part{
+    font-size: 1.6rem;
+    margin: 30px;
+    cursor: pointer;
+}
+.social-link{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    height: 79%;
+    width: 50%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+.social-link:hover{
+    opacity: 0.8;
+}
+.rowss{
+    width: 90%;
+}
+.main-card{
+    padding-left: 100px;
+}
+.card-start{
+    margin-top: 70px;
+}
+@media only screen and (max-width: 392px){
+    .rows{
+        width: 100%;
+    }
+    .main-card{
+        padding-left: 85px;
+    }
+}
+@media only screen and (max-width: 392px){
+    .rows{
+        width: 100%;
+    }
+    .main-card{
+        padding-left: 75px;
+    }
+}
+/*----------price------*/
+.cards-bg{
+    background-color: orange;
+}
+.list-group-items{
+    font-size: 1.2rem;
+    list-style: none;
+}
+.list-group-item{
+    margin-left: 70px;
+    margin-top: 10px;
+    font-weight: 800;
+}
+.btn3{
+    background-color: orange;
+}
+.btn3:hover{
+   background-color: white;
+}
+.list-group{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.price{
+    margin-top: 70px;
+}
+.rowss{
+    width: 100%;
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 492px){
+    .rowss{
+        width: 100%;
+        padding-left: 50px;
+    }
+}
+@media only screen and (max-width: 392px){
+    .rowss{
+        width: 100%;
+        padding-left: 30px;
+    }
+}
+/*------------------Subsribe-----------*/
+.subsribe{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(./images/Subscribe.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 45vh;
+        margin-top: 70px;
+      
+}
+.text-sub{
+    display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.get{
+   margin-left: 320px;
+  
+}
+@media only screen and (max-width: 492px){
+    .get{
+        margin-left: 0px;
+       
+     }
+     .subsribe{
+         height: 32vh;
+     }
+}
+@media only screen and (max-width: 392px){
+    .get{
+        margin-left: 0px;
+       
+     }
+     .subsribe{
+        height: 42vh;
+    }
+}
+.message{
+    margin-top: 70px;
+}
+.message-from{
+    display: flex;
+    flex-direction: row;
+}
+.messageing{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 290px;
+}
+@media only screen and (max-width: 492px){
+    .messageing{
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 392px){
+    .messageing{
+        margin-left: 0;
+    }
+    
+}
+.footer{
+    background-color: orange;
+    margin-top: 50px;
+}
+.first-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+/*------First top header------*/
+.header-one{
+    background-color: rgb(160, 233, 86);
+    height: 8vh;
+}
+.hedear-link{
+    margin: 12px;
+}
+.mail{
+    padding-left: 50px;
+}
+@media only screen and (max-width: 492px){
+    .mail{
+        padding-left: 10px;
+    }
+    .hedear-link{
+        margin: 6px;
+    }
+    .header-one{
+        background-color: rgb(112, 165, 60);
+        height: 6vh;
+    }
+}
+@media only screen and (max-width: 392px){
+    .mail{
+        padding-left: 10px;
+    }
+    .hedear-link{
+        margin: 6px;
+    }
+}
+.hedear-link1 {
+    color: #4267B2;
+}
+.hedear-link2 {
+    color: #E1306C;;
+}
+.hedear-link3 {
+    color: #1DA1F2;
+}
+
+
